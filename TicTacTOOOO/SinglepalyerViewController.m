@@ -19,7 +19,7 @@
 @property int score2;
 @property (weak, nonatomic) IBOutlet UILabel *labelplayer;
 @property (weak, nonatomic) IBOutlet UILabel *labelcomputer;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSMutableArray *enableButton;
+
 
 
 @end
@@ -57,9 +57,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //creating memory here
-    [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
+
     
-    self.enableButton=[[NSMutableArray alloc]init];
     self.buttonRemainder = [[NSMutableArray alloc] init];
     
         self.name =[NSString stringWithFormat:@"Score: 0"];
@@ -88,8 +88,10 @@
        [sender setEnabled:NO];
     
     [self check];
+    
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 
-    [self computer];
+    //[self computer];
 
     
     
@@ -106,7 +108,7 @@
 
     [self check];
 
-        [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button3:(UIButton *)sender {
   
@@ -119,7 +121,7 @@
 
     [self check];
 
-    [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button4:(UIButton *)sender {
 
@@ -132,7 +134,7 @@
 
     [self check];
 
-    [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button5:(UIButton *)sender {
 
@@ -144,7 +146,7 @@
 
     [self check];
 
-        [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button6:(UIButton *)sender {
     
@@ -156,7 +158,7 @@
 
     [self check];
 
-   [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button7:(UIButton *)sender {
 
@@ -168,7 +170,7 @@
 
     [self check];
 
-    [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button8:(UIButton *)sender {
 
@@ -180,7 +182,7 @@
 
     [self check];
 
-    [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
 }
 - (IBAction)button9:(UIButton *)sender {
 
@@ -198,7 +200,7 @@
 
     [self check];
 
-    [self computer];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
     
     
     
@@ -433,8 +435,10 @@
 }
 
 -(void)computer{
+    NSMutableArray *enableButton;
     
-    
+    enableButton=[[NSMutableArray alloc]init];
+
     
     UIImage *image2 = [UIImage imageNamed:@"o"];
     
@@ -474,27 +478,28 @@
 
             if([self.button1[k] isEnabled]){
                 
-                [self.enableButton addObject:[self.button1 objectAtIndex: k]];
+                [enableButton addObject:self.button1[k]];
+                NSLog(@"this the button to add: %i", k);
+                
             }
         
         
         }
         
-        NSUInteger randomIndex = randomIndex = arc4random() % [self.enableButton count];
+        NSUInteger randomIndex = arc4random() % [enableButton count];
         NSLog(@"this is the: %lu", randomIndex);
         
-
-        for(int k=0; k<self.enableButton.count; k++)
+       
+        for(int k=0; k<self.button1.count; k++)
         {
-            if(self.enableButton[randomIndex] == self.button1[k]){
+            if(enableButton[randomIndex] == self.button1[k]){
             
-                UIButton * buttonNew = self.enableButton[k];
+                UIButton * buttonNew = self.button1[k];
                 
-                
-                
+
                 [buttonNew setImage:image2 forState:UIControlStateNormal];
                 
-                [buttonNew setEnabled:NO];
+                [self.button1[k] setEnabled:NO];
 
                 
                            break;

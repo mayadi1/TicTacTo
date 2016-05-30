@@ -23,21 +23,31 @@
                                     <rect key="frame" x="0.0" y="28" width="400" height="780"/>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arcade_1player" highlightedImage="arcade_1player" translatesAutoresizingMaskIntoConstraints="NO" id="uV7-CX-f7Z">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="120" y="211" width="172" height="116"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-sH-F5W">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="One Player"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="163" y="249" width="75" height="30"/>
+                                    <rect key="frame" x="120" y="211" width="172" height="116"/>
                                 </variation>
                                 <connections>
                                     <segue destination="3M7-WL-hGZ" kind="show" id="FU7-V2-ViG"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arcade_2player" translatesAutoresizingMaskIntoConstraints="NO" id="SE8-Rm-aBa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="120" y="383" width="172" height="116"/>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nN-i9-m5Z">
                                 <rect key="frame" x="263" y="393" width="74" height="62"/>
-                                <state key="normal" title="Two player"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="163" y="297" width="74" height="62"/>
+                                    <rect key="frame" x="120" y="383" width="172" height="117"/>
                                 </variation>
                             </button>
                         </subviews>
@@ -45,13 +55,17 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="5ae-dS-3yW"/>
+                                <exclude reference="uV7-CX-f7Z"/>
                                 <exclude reference="hYP-sH-F5W"/>
+                                <exclude reference="SE8-Rm-aBa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="5ae-dS-3yW"/>
+                                <include reference="uV7-CX-f7Z"/>
                                 <include reference="hYP-sH-F5W"/>
+                                <include reference="SE8-Rm-aBa"/>
                             </mask>
                         </variation>
                     </view>
@@ -113,16 +127,10 @@
                                     <rect key="frame" x="0.0" y="238" width="400" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_button" translatesAutoresizingMaskIntoConstraints="NO" id="vsJ-Hw-eB4">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="267" y="547" width="103" height="88"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcK-W7-qhV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="278" y="560" width="80" height="62"/>
+                                    <rect key="frame" x="246" y="552" width="80" height="77"/>
                                 </variation>
                                 <connections>
                                     <segue destination="ih0-lL-RAF" kind="push" id="4tC-Eg-IRd"/>
@@ -157,6 +165,12 @@
                                     <segue destination="UnB-C8-z0i" kind="unwind" unwindAction="unwindAndBookIt:" id="Ytq-Sv-94j"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="start_button" translatesAutoresizingMaskIntoConstraints="NO" id="vsJ-Hw-eB4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="235" y="547" width="103" height="88"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -166,11 +180,11 @@
                                 <exclude reference="Cpc-WG-VaH"/>
                                 <exclude reference="70F-ea-oF0"/>
                                 <exclude reference="Ahh-oA-Tha"/>
-                                <exclude reference="vsJ-Hw-eB4"/>
                                 <exclude reference="qcK-W7-qhV"/>
                                 <exclude reference="wxS-WU-ZgG"/>
                                 <exclude reference="MtY-S4-vcW"/>
                                 <exclude reference="6mf-Qa-OUa"/>
+                                <exclude reference="vsJ-Hw-eB4"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -180,11 +194,11 @@
                                 <include reference="Cpc-WG-VaH"/>
                                 <include reference="70F-ea-oF0"/>
                                 <include reference="Ahh-oA-Tha"/>
-                                <include reference="vsJ-Hw-eB4"/>
                                 <include reference="qcK-W7-qhV"/>
                                 <include reference="wxS-WU-ZgG"/>
                                 <include reference="MtY-S4-vcW"/>
                                 <include reference="6mf-Qa-OUa"/>
+                                <include reference="vsJ-Hw-eB4"/>
                             </mask>
                         </variation>
                     </view>
@@ -219,54 +233,81 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czt-dT-gur">
                                 <rect key="frame" x="65" y="127" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="123" width="79" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button1:" destination="ih0-lL-RAF" eventType="touchUpInside" id="kEr-Mo-CyE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13d-Nc-4Fo">
                                 <rect key="frame" x="161" y="127" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="142" y="123" width="74" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button2:" destination="ih0-lL-RAF" eventType="touchUpInside" id="DSF-p2-BJH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-L3-fwx">
                                 <rect key="frame" x="271" y="127" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="259" y="123" width="75" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button3:" destination="ih0-lL-RAF" eventType="touchUpInside" id="KUO-dL-js9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lld-UI-CEe">
                                 <rect key="frame" x="60" y="234" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="230" width="74" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button4:" destination="ih0-lL-RAF" eventType="touchUpInside" id="F7K-v2-tyY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-YF-d9h">
                                 <rect key="frame" x="169" y="234" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="230" width="74" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button5:" destination="ih0-lL-RAF" eventType="touchUpInside" id="AV8-vM-MKn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS7-wB-q8X">
                                 <rect key="frame" x="271" y="234" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="259" y="230" width="75" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button6:" destination="ih0-lL-RAF" eventType="touchUpInside" id="Fer-A7-rkr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pud-0X-gnA">
                                 <rect key="frame" x="60" y="363" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="359" width="74" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button7:" destination="ih0-lL-RAF" eventType="touchUpInside" id="7kc-L7-W9H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXn-fz-HFh">
                                 <rect key="frame" x="161" y="363" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="359" width="74" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button8:" destination="ih0-lL-RAF" eventType="touchUpInside" id="lgQ-NX-5R0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydn-1f-Nnf">
                                 <rect key="frame" x="271" y="363" width="74" height="62"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="259" y="359" width="75" height="62"/>
+                                </variation>
                                 <connections>
                                     <action selector="button9:" destination="ih0-lL-RAF" eventType="touchUpInside" id="lXa-P0-ohh"/>
                                 </connections>
@@ -309,12 +350,6 @@
                                     <rect key="frame" x="192" y="478" width="134" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tictoebox_rb" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sb-77-cPu">
-                                <rect key="frame" x="0.0" y="47" width="412" height="411"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="59" width="386" height="411"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAS-S9-Qbw">
                                 <rect key="frame" x="389" y="454" width="97" height="57"/>
                                 <state key="normal" backgroundImage="Photo"/>
@@ -325,6 +360,12 @@
                                     <action selector="TakePhoto" destination="ih0-lL-RAF" eventType="touchUpInside" id="W2h-Bs-Nur"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tictoebox_rb" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sb-77-cPu">
+                                <rect key="frame" x="0.0" y="47" width="412" height="411"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="59" width="365" height="411"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -386,42 +427,63 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="fAa-Bb-61x">
                                 <rect key="frame" x="-10" y="-10" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbn-AE-r1C">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="ih0-lL-RAF" kind="show" id="VNs-U7-3Ei"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4Aj-a6-Cy4" firstAttribute="top" secondItem="ZeV-Jl-UBk" secondAttribute="bottom" id="7wn-aE-gtz"/>
-                            <constraint firstItem="ZeV-Jl-UBk" firstAttribute="top" secondItem="5ck-wU-DYV" secondAttribute="bottom" constant="10" id="BtY-jV-5Qc"/>
-                            <constraint firstItem="fAa-Bb-61x" firstAttribute="centerY" secondItem="RGp-LA-lew" secondAttribute="centerY" id="eVW-1P-Yfo"/>
-                            <constraint firstAttribute="trailing" secondItem="ZeV-Jl-UBk" secondAttribute="trailing" id="nVv-28-cUL"/>
-                            <constraint firstItem="fAa-Bb-61x" firstAttribute="centerX" secondItem="RGp-LA-lew" secondAttribute="centerX" id="pDU-UY-XIE"/>
-                            <constraint firstItem="ZeV-Jl-UBk" firstAttribute="leading" secondItem="RGp-LA-lew" secondAttribute="leading" id="yP3-j0-AHx"/>
+                            <constraint firstItem="fAa-Bb-61x" firstAttribute="centerX" secondItem="RGp-LA-lew" secondAttribute="centerX" id="Oku-L1-ZlC"/>
+                            <constraint firstItem="4Aj-a6-Cy4" firstAttribute="top" secondItem="Zbn-AE-r1C" secondAttribute="bottom" id="QxG-BK-WBL"/>
+                            <constraint firstItem="fAa-Bb-61x" firstAttribute="centerY" secondItem="RGp-LA-lew" secondAttribute="centerY" id="S1p-0Q-UlU"/>
+                            <constraint firstItem="ZeV-Jl-UBk" firstAttribute="top" secondItem="5ck-wU-DYV" secondAttribute="bottom" constant="10" id="bF7-7J-NrX"/>
+                            <constraint firstAttribute="trailing" secondItem="ZeV-Jl-UBk" secondAttribute="trailing" id="dZI-JK-lK0"/>
+                            <constraint firstItem="Zbn-AE-r1C" firstAttribute="leading" secondItem="RGp-LA-lew" secondAttribute="leading" id="dfg-9h-ZBj"/>
+                            <constraint firstItem="ZeV-Jl-UBk" firstAttribute="leading" secondItem="RGp-LA-lew" secondAttribute="leading" id="dqM-6l-JfF"/>
+                            <constraint firstItem="Zbn-AE-r1C" firstAttribute="top" secondItem="ZeV-Jl-UBk" secondAttribute="bottom" constant="2" id="fJa-hD-3OL"/>
+                            <constraint firstItem="Zbn-AE-r1C" firstAttribute="top" secondItem="ZeV-Jl-UBk" secondAttribute="bottom" constant="2" id="hfo-Qj-88S"/>
+                            <constraint firstAttribute="trailing" secondItem="Zbn-AE-r1C" secondAttribute="trailing" id="maF-Kc-Or0"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ZeV-Jl-UBk"/>
                                 <exclude reference="fAa-Bb-61x"/>
+                                <exclude reference="Zbn-AE-r1C"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7wn-aE-gtz"/>
-                                <exclude reference="eVW-1P-Yfo"/>
-                                <exclude reference="pDU-UY-XIE"/>
-                                <exclude reference="BtY-jV-5Qc"/>
-                                <exclude reference="nVv-28-cUL"/>
-                                <exclude reference="yP3-j0-AHx"/>
+                                <exclude reference="QxG-BK-WBL"/>
+                                <exclude reference="Oku-L1-ZlC"/>
+                                <exclude reference="S1p-0Q-UlU"/>
+                                <exclude reference="dfg-9h-ZBj"/>
+                                <exclude reference="fJa-hD-3OL"/>
+                                <exclude reference="hfo-Qj-88S"/>
+                                <exclude reference="maF-Kc-Or0"/>
+                                <exclude reference="bF7-7J-NrX"/>
+                                <exclude reference="dZI-JK-lK0"/>
+                                <exclude reference="dqM-6l-JfF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="ZeV-Jl-UBk"/>
                                 <include reference="fAa-Bb-61x"/>
+                                <include reference="Zbn-AE-r1C"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7wn-aE-gtz"/>
-                                <include reference="eVW-1P-Yfo"/>
-                                <include reference="pDU-UY-XIE"/>
-                                <include reference="BtY-jV-5Qc"/>
-                                <include reference="nVv-28-cUL"/>
-                                <include reference="yP3-j0-AHx"/>
+                                <include reference="QxG-BK-WBL"/>
+                                <include reference="Oku-L1-ZlC"/>
+                                <include reference="S1p-0Q-UlU"/>
+                                <include reference="dfg-9h-ZBj"/>
+                                <include reference="fJa-hD-3OL"/>
+                                <include reference="hfo-Qj-88S"/>
+                                <include reference="maF-Kc-Or0"/>
+                                <include reference="bF7-7J-NrX"/>
+                                <include reference="dZI-JK-lK0"/>
+                                <include reference="dqM-6l-JfF"/>
                             </mask>
                         </variation>
                     </view>
@@ -455,9 +517,14 @@
     </scenes>
     <resources>
         <image name="Photo" width="1146" height="1146"/>
+        <image name="arcade_1player" width="280" height="280"/>
+        <image name="arcade_2player" width="280" height="280"/>
         <image name="back_button" width="666" height="666"/>
         <image name="nebula_bg" width="750" height="1334"/>
         <image name="start_button" width="666" height="666"/>
         <image name="tictoebox_rb" width="2690" height="2690"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4tC-Eg-IRd"/>
+    </inferredMetricsTieBreakers>
 </document>
