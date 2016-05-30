@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SinglepalyerViewController.h"
+#import "SingleSignInViewController.h"
 
 @interface ViewController ()
 
