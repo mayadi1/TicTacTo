@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AE7B211CFD3CBF00639BA6 /* SignIntwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE7B201CFD3CBF00639BA6 /* SignIntwoViewController.m */; };
 		18AF9ABF1CFA394800E007FC /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AF9ABE1CFA394800E007FC /* WebViewViewController.m */; };
 		18BCF0D71CF7932300050000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCF0D61CF7932300050000 /* main.m */; };
 		18BCF0DA1CF7932400050000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCF0D91CF7932400050000 /* AppDelegate.m */; };
@@ -14,11 +15,14 @@
 		18BCF0E21CF7932400050000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18BCF0E11CF7932400050000 /* Assets.xcassets */; };
 		18BCF0E51CF7932400050000 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BCF0E31CF7932400050000 /* LaunchScreen.storyboard */; };
 		18BCF0EE1CF7937300050000 /* SinglepalyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BCF0ED1CF7937300050000 /* SinglepalyerViewController.m */; };
+		18F594851CFCE12F0025C998 /* TwoPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F594841CFCE12F0025C998 /* TwoPlayersViewController.m */; };
 		18F99E7C1CFB525900FD420E /* SingleSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F99E7B1CFB525900FD420E /* SingleSignInViewController.m */; };
 		18F99E801CFB553700FD420E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F99E7F1CFB553700FD420E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18AE7B1F1CFD3CBF00639BA6 /* SignIntwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignIntwoViewController.h; sourceTree = "<group>"; };
+		18AE7B201CFD3CBF00639BA6 /* SignIntwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignIntwoViewController.m; sourceTree = "<group>"; };
 		18AF9ABD1CFA394800E007FC /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
 		18AF9ABE1CFA394800E007FC /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
 		18BCF0D21CF7932300050000 /* TicTacTOOOO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacTOOOO.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +36,8 @@
 		18BCF0E61CF7932400050000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18BCF0EC1CF7937300050000 /* SinglepalyerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinglepalyerViewController.h; sourceTree = "<group>"; };
 		18BCF0ED1CF7937300050000 /* SinglepalyerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinglepalyerViewController.m; sourceTree = "<group>"; };
+		18F594831CFCE12F0025C998 /* TwoPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPlayersViewController.h; sourceTree = "<group>"; };
+		18F594841CFCE12F0025C998 /* TwoPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPlayersViewController.m; sourceTree = "<group>"; };
 		18F99E7A1CFB525900FD420E /* SingleSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleSignInViewController.h; sourceTree = "<group>"; };
 		18F99E7B1CFB525900FD420E /* SingleSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleSignInViewController.m; sourceTree = "<group>"; };
 		18F99E7F1CFB553700FD420E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +77,11 @@
 				18BCF0D91CF7932400050000 /* AppDelegate.m */,
 				18BCF0DB1CF7932400050000 /* ViewController.h */,
 				18BCF0DC1CF7932400050000 /* ViewController.m */,
+				18F594831CFCE12F0025C998 /* TwoPlayersViewController.h */,
+				18F594841CFCE12F0025C998 /* TwoPlayersViewController.m */,
 				18F99E7F1CFB553700FD420E /* Main.storyboard */,
+				18AE7B1F1CFD3CBF00639BA6 /* SignIntwoViewController.h */,
+				18AE7B201CFD3CBF00639BA6 /* SignIntwoViewController.m */,
 				18F99E7A1CFB525900FD420E /* SingleSignInViewController.h */,
 				18F99E7B1CFB525900FD420E /* SingleSignInViewController.m */,
 				18AF9ABD1CFA394800E007FC /* WebViewViewController.h */,
@@ -168,7 +178,9 @@
 				18F99E7C1CFB525900FD420E /* SingleSignInViewController.m in Sources */,
 				18BCF0DD1CF7932400050000 /* ViewController.m in Sources */,
 				18BCF0EE1CF7937300050000 /* SinglepalyerViewController.m in Sources */,
+				18F594851CFCE12F0025C998 /* TwoPlayersViewController.m in Sources */,
 				18AF9ABF1CFA394800E007FC /* WebViewViewController.m in Sources */,
+				18AE7B211CFD3CBF00639BA6 /* SignIntwoViewController.m in Sources */,
 				18BCF0DA1CF7932400050000 /* AppDelegate.m in Sources */,
 				18BCF0D71CF7932300050000 /* main.m in Sources */,
 			);
