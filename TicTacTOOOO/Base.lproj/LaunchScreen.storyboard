@@ -17,16 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play this app splash" translatesAutoresizingMaskIntoConstraints="NO" id="k9h-oE-4jN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play this app splash-1" translatesAutoresizingMaskIntoConstraints="NO" id="L9P-83-5fF">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="k9h-oE-4jN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="OMg-cy-Bte"/>
-                            <constraint firstItem="k9h-oE-4jN" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="Y5s-0M-yk2"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="k9h-oE-4jN" secondAttribute="bottom" id="ZjK-Ve-bXL"/>
-                            <constraint firstAttribute="trailing" secondItem="k9h-oE-4jN" secondAttribute="trailing" id="hbU-Zi-UyX"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="L9P-83-5fF" secondAttribute="bottom" id="EWQ-vS-MAg"/>
+                            <constraint firstItem="L9P-83-5fF" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="MN3-Ae-P1v"/>
+                            <constraint firstItem="L9P-83-5fF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="cp7-iT-MUh"/>
+                            <constraint firstAttribute="trailing" secondItem="L9P-83-5fF" secondAttribute="trailing" id="yeC-76-0tD"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,6 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="play this app splash" width="750" height="1334"/>
+        <image name="play this app splash-1" width="750" height="1334"/>
     </resources>
 </document>

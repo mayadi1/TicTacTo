@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *url =[NSURL URLWithString:@"http://www.wikihow.com/Win-at-Tic-Tac-Toe"];
+    NSURL *url =[NSURL URLWithString:@"http://www.ayadios.com/tictactoerules.html"];
     NSURLRequest *request =[NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
     

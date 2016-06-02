@@ -45,11 +45,7 @@
             dvc.type = 1;
             
             break;
-        case 2:
-            
-            dvc.type = 2;
-            
-            break;
+ 
             
         default:
             break;

@@ -27,6 +27,22 @@
 @implementation SinglepalyerViewController
 
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
+    
+    
+    self.buttonRemainder = [[NSMutableArray alloc] init];
+    self.labelplayer.text = [NSString stringWithFormat:@"score:"];
+    self.labelcomputer.text = [NSString stringWithFormat:@"secore:"];
+
+//    self.labelplayer.text = [NSString stringWithFormat:@"%@: 0",self.name];
+//    self.labelcomputer.text = [NSString stringWithFormat:@"%@: 0",self.computerName];
+//  
+}
+
+
+
 
 -(IBAction)TakePhoto{
     
@@ -54,30 +70,6 @@
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    //creating memory here
-    [self performSelector:@selector(computer) withObject:nil afterDelay:.7];
-
-    
-    self.buttonRemainder = [[NSMutableArray alloc] init];
-    
-        self.name =[NSString stringWithFormat:@"Score: 0"];
-
-
-        self.computerName =[NSString stringWithFormat:@"Score"];
-
-   
-
-    self.labelplayer.text = [NSString stringWithFormat:@"%@: 0",self.name];
-    self.labelcomputer.text = [NSString stringWithFormat:@"%@: 0",self.computerName];
-   
-    
-   
-    
-
-    
-}
 - (IBAction)button1:(UIButton *)sender {
     
     UIImage *image1 = [UIImage imageNamed:@"x"];
@@ -208,7 +200,7 @@
 
 -(void)alert{
     self.score1 = self.score1+1;
-    self.labelplayer.text = [NSString stringWithFormat:@"Score:%i",self.score1/3];
+   // self.labelplayer.text = [NSString stringWithFormat:@"Score:%i",self.score1/3];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:@"Player 1 wins" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *newGame =[UIAlertAction actionWithTitle:@"New game" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -259,7 +251,7 @@
 
 -(void)alert3{
     self.score2 = self.score2+1;
-    self.labelcomputer.text = [NSString stringWithFormat:@"Score:%i",self.score2];
+    //self.labelcomputer.text = [NSString stringWithFormat:@"Score:%i",self.score2];
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"" message:@"Computer win" preferredStyle:UIAlertControllerStyleAlert];
     
@@ -451,7 +443,6 @@
         
         if([self.button1[k] isEnabled]){
             
-           // NSLog(@"this is th enumber of enabel button: %i", k );
             
             UIButton * button = [self.button1 objectAtIndex: k];
             
@@ -470,7 +461,6 @@
 }
     
     if(self.type == 1){
-        int rand;
         [self check];
         
         for(int k=0; k<self.button1.count; k++)
@@ -479,7 +469,6 @@
             if([self.button1[k] isEnabled]){
                 
                 [enableButton addObject:self.button1[k]];
-                NSLog(@"this the button to add: %i", k);
                 
             }
         
@@ -487,7 +476,6 @@
         }
         
         NSUInteger randomIndex = arc4random() % [enableButton count];
-        NSLog(@"this is the: %lu", randomIndex);
         
        
         for(int k=0; k<self.button1.count; k++)
@@ -506,32 +494,9 @@
                       }
             
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-//        NSUInteger number = [self.enableButton count];
-//        NSLog(@"enabel button: %lu",number);
-//        NSUInteger randomIndex = randomIndex = arc4random() % [self.enableButton count];
-//        
-//        
-//        for(int k=0; k<self.button1.count; k++)
-//        {
-//            
-//
-//            
-//        }
-//    
+  
     
 }
 }
-
-
-
 
 @end
